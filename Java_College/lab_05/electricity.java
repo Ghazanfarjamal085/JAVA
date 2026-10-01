@@ -58,3 +58,6 @@ class commercial implements powerGrid {
 
 //     }
 // }
+
+
+//My name Ghazanfar jamal
