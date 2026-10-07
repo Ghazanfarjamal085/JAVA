@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class electricity {
     public static void main(String[] args) {
         System.out.print("Enter the units of Domestic:    ");
@@ -17,6 +16,8 @@ interface powerGrid {
     void calculate_final_bill();
 }
 
+
+
 class domestic implements powerGrid {
 
     public void calculate_final_bill() {
@@ -25,7 +26,6 @@ class domestic implements powerGrid {
 
         double units = sc.nextDouble();
 
-        // System.out.println("Units consumed of the domestic: " + units);
 
         if (units <= 100) {
             double bill_of_domestic = (10 * units);
@@ -45,19 +45,9 @@ class commercial implements powerGrid {
 
         double units = sc.nextDouble();
 
-        // System.out.println("Units consumed of commercial: " + units);
 
         double bill_of_domestic = (20 * units);
         System.out.println("The final bill of Commercial is " + bill_of_domestic);
 
     }
 }
-
-// public class electricity {``
-//     public static void main(String[] args) {
-
-//     }
-// }
-
-
-//My name Ghazanfar jamal
